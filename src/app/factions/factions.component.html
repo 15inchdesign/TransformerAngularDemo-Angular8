@@ -1,0 +1,17 @@
+<h3>{{ select | uppercase }}</h3>
+<!--ul class="factions">
+	<li *ngFor="let faction of factions">{{faction.name}}</li>	
+</ul-->
+<section class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="25%" fxLayoutAlign="space-around center" >
+  <div fxFlex="50%" *ngFor="let faction of factions" fxLayoutAlign="center center" ><span>{{faction.name}}</span>
+    <!--img mat-card-image class="img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg"-->
+  </div>
+ 
+</section>
+ <!--a *ngFor="let t of transformersId" 
+      routerLink="/detail/{{t.id}}">
+    <div class="module">
+      <h4>{{t.name}}</h4>
+    </div>
+  </a-->	
+

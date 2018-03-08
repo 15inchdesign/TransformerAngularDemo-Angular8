@@ -1,0 +1,15 @@
+<h3>{{ features | uppercase }}</h3>
+
+<select id="group" [(ngModel)]="group">
+  <option *ngFor="let g of groups" [value]="">{{ g }} </option>
+</select>
+
+<select id="type" [(ngModel)]="type">
+  <option *ngFor="let t of types" [value]="">{{ t }} </option>
+</select>
+
+<select id="model" [(ngModel)]="model">
+  <option *ngFor="let m of models" [value]="">{{ m }} </option>
+</select>
+
+
