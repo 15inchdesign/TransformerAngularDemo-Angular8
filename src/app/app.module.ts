@@ -1,12 +1,12 @@
 ///<reference path="app.component.ts"/>
 import { BrowserModule } from '@angular/platform-browser';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+//import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule,  ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule }  from '@angular/common/http';
-import { MatCardModule } from '@angular/material/card';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatSelectModule } from '@angular/material/select';
+//import { MatCardModule } from '@angular/material/card';
+//import { FlexLayoutModule } from '@angular/flex-layout';
+///import { MatSelectModule } from '@angular/material/select';
 
 
 import { AppComponent } from './app.component';
@@ -32,14 +32,11 @@ import { RoutingModule } from './routing/routing.module';
   
   ],
   imports: [
+    FormsModule,  
+	ReactiveFormsModule,
     BrowserModule,
-    BrowserAnimationsModule,
-    FormsModule,
     HttpClientModule,
-    RoutingModule,
-    FlexLayoutModule,
-    MatCardModule,
-    MatSelectModule
+    RoutingModule
   ],
   providers: [TransformersService],
   bootstrap: [AppComponent]
