@@ -21,6 +21,7 @@ import { FeaturesComponent } from './features/features.component';
 
 //Routing
 import { RoutingModule } from './routing/routing.module';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { RoutingModule } from './routing/routing.module';
 	ReactiveFormsModule,
     BrowserModule,
     HttpClientModule,
-    RoutingModule
+    RoutingModule,
+    NoopAnimationsModule
   ],
   providers: [TransformersService],
   bootstrap: [AppComponent]
