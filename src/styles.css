@@ -1,20 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,700,900');
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 
-html, 
+html,
 body {
-  min-height: 50%;
-  padding: .5em;
-  margin: auto;
+    height: 100%;
 }
-
 body {
-	font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-
-	text-align: center;
+.heading {
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: auto;
+}
+.nav-bar {
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 
+    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 
+    0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+.mat-toolbar.mat-blue {
+    background-color: #3f51b5;
+    color: white;
+}
+
+.portal-container {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+
+.sidebar {
+    background-color: rgba(0,0,0,.03);
+    display: flex;
+    position: relative;
+    width: 20%;
+}
+.fav-locations {
+    width: 100%;
+    padding: 2em;
+    display: block;
+}
+
+.mat-expansion-panel {
+    background: #fff;
+    color: rgba(0,0,0,.87);
+}
+
+.mat-expansion-panel-header-title,
+.mat-list-base.mat-list-item {
+    color: rgba(0,0,0,.87);
+}
+.mat-expansion-indicator::after, .mat-expansion-panel-header-description {
+    color: rgba(0,0,0,.54);
+}
+
+.search-field {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: baseline;
+}
+
+.mat-card {
+    width: 50%;
+}
+
+.mat-card-current-weather {
+    margin: auto;
+}
+.result{
+    margin-top: 2em;
+}
+.inner {
+    padding: 2em;
+}
+.top-nav-serach {
+    margin-left: 2.5em;
+    font-size: 0.8em;
+}
+
+
+.form-field {
+    width: 100%;
+}
+

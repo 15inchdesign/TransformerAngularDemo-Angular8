@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Transformers-Angular-Demo": {
+    "WeatherApp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Transformers-Angular-Demo",
+            "outputPath": "dist/WeatherApp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Transformers-Angular-Demo:build"
+            "browserTarget": "WeatherApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Transformers-Angular-Demo:build:production"
+              "browserTarget": "WeatherApp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Transformers-Angular-Demo:build"
+            "browserTarget": "WeatherApp:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Transformers-Angular-Demo:serve"
+            "devServerTarget": "WeatherApp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Transformers-Angular-Demo:serve:production"
+              "devServerTarget": "WeatherApp:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Transformers-Angular-Demo"
+  "defaultProject": "WeatherApp"
 }
